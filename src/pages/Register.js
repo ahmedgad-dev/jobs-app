@@ -41,12 +41,21 @@ const Register = () => {
       dispatch(loginUser({email:email, password:password}))
       return
     }
-    dispatch(registerUser({email, password}))
+    dispatch(registerUser({email, password, name}))
+    setValues({name:'', email:'', password: ''})
   }
 
   const toggleMember = () => {
     setValues({...values, isMember: !values.isMember})
   }
+
+  useEffect(() => {
+    if(user){
+      setTimeout(() => {
+        navigate('/')
+      }, 2000)
+    }
+  }, [user, navigate])
   
   return(
     <Wrapper className='full-page'>
