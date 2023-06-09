@@ -12,7 +12,7 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Provider store={store}>
-       <App />
+       <App tab='home'/>
      </Provider>   
     </BrowserRouter>
   </React.StrictMode>

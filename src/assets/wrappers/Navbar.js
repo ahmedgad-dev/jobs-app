@@ -11,12 +11,17 @@ const Wrapper = styled.nav`
     align-items: center;
     width: 100px;
   }
+  .adjust-center{
+    display: flex;
+    width: 60%;
+  }
   .nav-center {
     display: flex;
-    width: 90vw;
+    width: 70vw;
     align-items: center;
     justify-content: space-between;
   }
+  
   .toggle-btn {
     background: transparent;
     border-color: transparent;
@@ -78,6 +83,12 @@ const Wrapper = styled.nav`
     }
     .logo-text {
       display: block;
+    }
+  }
+
+  @media(max-width:992px){
+    .adjust-center{
+      width: 50%;
     }
   }
 `
