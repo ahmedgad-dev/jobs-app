@@ -18,7 +18,7 @@ const SearchContainer = () => {
     console.log(query)
   }
 
-  const list = []
+  const list = ['On Site', 'Remote', 'Hybrid']
 
   return(
     <Wrapper>

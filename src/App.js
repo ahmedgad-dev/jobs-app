@@ -20,9 +20,10 @@ function App() {
        <Routes>
          <Route path='/' 
           element={
-           <ProtectedRoute>
+          //  <ProtectedRoute>
              <SharedLayout/>
-           </ProtectedRoute>} > 
+          //  </ProtectedRoute>
+           } > 
             <Route index element={<Stats/>}/>
             <Route path="all-jobs" element={<AllJobs/>}/>
             <Route path="add-job" element={<AddJob/>}/>
